@@ -2,12 +2,12 @@
 
 /**
  * add - sums of two integers
- * @x: int to be summed
- * @y: int to be summed
+ * @a: int to be summed
+ * @b: int to be summed
  * Return
  */
 
- int add(int x, int y)
+ int add(int a, int b)
  {
-	return (x + y);
+	return (a + b);
  }
