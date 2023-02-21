@@ -4,7 +4,7 @@
  * add - sums of two integers
  * @a: int to be summed
  * @b: int to be summed
- * Return
+ * Return: 0
  */
 
 int add(int a, int b)
