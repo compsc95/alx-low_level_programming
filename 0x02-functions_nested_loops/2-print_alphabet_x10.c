@@ -1,13 +1,23 @@
 #include "main.h"
 
 /**
- * add - sums two integers
- * @a: int to be summed
- * @b: int to be summed
- * Return: 0
+ * print_alphabet_x10 - prints the letters of the alphabet
+ *
+ * Return: 0 Always
  */
 
-int add(int x, int y)
+void print_alphabet_x10(void)
 {
-	return (x + y);
+	char alph;
+	int i = 1;
+
+	while (i <= 10)
+	{
+		for (alph = 'a'; alph <= 'z'; alph++)
+		{
+			_putchar(alph);
+		}
+		i++;
+		_putchar('\n');
+	}
 }
