@@ -1,30 +1,13 @@
 #include "main.h"
 
 /**
- * print_triangle - Prints a triangle, using the character #.
- * @size: The size of the triangle.
+ * mul - Multiples two integers.
+ * @a: The first integer to be multiplied.
+ * @b: The second integer to be multiplied.
+ *
+ * Return: The result of the multiplication.
  */
-void print_triangle(int size)
+int mul(int a, int b)
 {
-	int hash, index;
-
-	if (size > 0)
-	{
-		for (hash = 1; hash <= size; hash++)
-		{
-			for (index = size - hash; index > 0; index--)
-				_putchar(' ');
-
-			for (index = 0; index < hash; index++)
-				_putchar('#');
-
-			if (hash == size)
-				continue;
-
-			_putchar('\n');
-		}
-	}
-
-	_putchar('\n');
+	return (a * b);
 }
-
