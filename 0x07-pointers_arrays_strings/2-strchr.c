@@ -1,38 +1,25 @@
 #include "main.h"
-
-#include <stdio.h>
-
-
+#include <stddef.h>
 
 /**
- * main - check the code
+ * _strchr - returns a chr in strings
+ * @s: useless string
+ * @c: useless char
  *
- * Return: Always 0.
+ * Return: pointer or Null
  */
 
-int main(void)
-
+char *_strchr(char *s, char c)
 {
+	do {
+		if (*s == c)
+		{
+		return (s);
+		}
 
-	char *s = "hello";
-
-	char *f;
-
-
-
-	f = _strchr(s, 'l');
-
-
-
-	if (f != NULL)
-
+	} while (*s++);
 	{
-
-		printf("%s\n", f);
-
+		return (NULL);
 	}
 
-	return (0);
-
 }
-
