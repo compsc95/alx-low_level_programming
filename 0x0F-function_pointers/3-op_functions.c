@@ -1,34 +1,69 @@
-#include "3-calc.h"
-#include <stddef.h>
-
 /**
- * get_op_func - get ops function pointer of type char array
- *               that accepts two inputs of int data type
+ * op_add - adds @a and @b
  *
- * @s: a character pointer pointing to a symbol from the program argument
+ * @a: input 1
+ * @b: input 2
  *
- * Return: one of the operator functions to perform calculations
+ * Return: sum of @a and @b
 */
 
-int (*get_op_func(char *s))(int, int)
+int op_add(int a, int b)
 {
-	/* struct opts of struct op_t */
-	op_t ops[] = {
-		{"+", op_add},
-		{"-", op_sub},
-		{"*", op_mul},
-		{"/", op_div},
-		{"%", op_mod},
-		{NULL, NULL}
-	};
-	int i = 0;
+	return (a + b);
+}
 
-	while (i < 5)
-	{
-		if (*s == *ops[i].op)
-			return (ops[i].f);
-		i++;
-	}
 
-	return (NULL);
+/**
+ * op_sub - gets the difference of @a and @b
+ *
+ * @a: input 1
+ * @b: input 2
+ *
+ * Return: difference of @a and @b
+*/
+int op_sub(int a, int b)
+{
+	return (a - b);
+}
+
+
+/**
+ * op_mul - multiplies @a and @b
+ *
+ * @a: input 1
+ * @b: input 2
+ *
+ * Return: product of @a and @b
+*/
+int op_mul(int a, int b)
+{
+	return (a * b);
+}
+
+
+/**
+ * op_div - divides @a by @b
+ *
+ * @a: input 1
+ * @b: input 2
+ *
+ * Return: results of the division @a and @b
+*/
+int op_div(int a, int b)
+{
+	return (a / b);
+}
+
+
+/**
+ * op_mod - gets the reminder of the division between @a and @b
+ *
+ * @a: input 1
+ * @b: input 2
+ *
+ * Return: the remainder
+*/
+int op_mod(int a, int b)
+{
+	return (a % b);
 }
