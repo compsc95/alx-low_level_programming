@@ -56,3 +56,27 @@ void print_all(const char * const format, ...)
 
 	va_end(ap);
 }
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+3-print_all.c [unix] (02:59 01/01/1970)                                  0,1 All
+-- INSERT --
+
